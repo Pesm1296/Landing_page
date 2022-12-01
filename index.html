@@ -5,21 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Muelas</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <a href="#"> <img src="assets\images\muela_logo.jpg" alt="Logo de una muela con un cepillo de dientes"> </a>
+        <a href="#" class="logo">
+            <img src="assets\images\muela_logo2.png" alt="Una muela en caricatura con un cepillo de dientes">
+            <h1 class="nombre">C.D. Jazmín Ruíz & Asociados</h1>
+        </a>
+        <nav>
             <a href="#"> ¿Quiénes somos? </a>
             <a href="#"> Nuestra misión </a>
-            <a href="#"> Precios </a>
+            <a href="#"> Servicios </a>
             <a href="#"> Contacto </a>
+            <div class="animation start-home"></div>
         </nav>
     </header>
     <main>
-        <h1>Cuidar tu sonrisa es cuidar tu salud</h1>
-        <img class="jumbotron" src="assets\images\paciente_dentista_jumbotron.jpg" alt="Dentista con paciente">
+        <!-- JUMBOTRON -->
+        <section class="jumbotron">
+            <h1 class="jumbotrontitle">Cuidar tu sonrisa es cuidar tu salud</h1>
+            <section class="jumbotrontext">
+                <h1>Somos un grupo de especialistas en salud dental, mejorando la funcionalidad y estética de tu sonrisa para lograr una mejor calidad de vida.</h1>
+                <br>
+                <p>¡Nos encataría poder ser parte del proceso!</p>
+                <br>
+                <input type="email" placeholder="Ingresa tu correo">
+                <button type="submit">Enviar</button>
+                <p>Te contactaremos en 24 horas hábiles <a href="#">Consulta nuestro aviso de privacidad</a></p>
+            </section>
+        </section>
+        <!-- BLOG -->
+        <section class="Blog">
+            <section class="servicio1" >
+                <p>Limpieza Dental</p>
+                <img src="assets\images\limpiezadental.jpeg" alt="Paciente realizando limpieza dental">
+            </section>
+            <section class="servicio2">
+                <p>Endodoncia</p>
+                <img src="assets\images\endodoncia.jpg" alt="Proceso de la endodoencia en dientes">
+            </section>
+            <section class="servicio3">
+                <p>Blanqueamento Dental</p>
+                <img src="assets\images\blanqueamientodental.jpg" alt="Proceso del blnaqueamiento dental con máquina">
+            </section>
+            <section class="servicio4">
+                <p>Implante de carillas dentales</p>
+                <img src="assets\images\carillasdentales.jpg" alt="Selección de color de dientes para carillas dentales">
+            </section>
+        </section>
+        <!-- ADICIONALES -->
+        <section class="Agendacita">
+            <section class="foto">
+                <img src="assets\images\consultoriodental.jpg" alt="Foto de la Dra. atendiendo un paciente en su consultorio">
+            </section>
+            <h1>Agenda tu cita para una revisón dental</h1>
+            <p>Nombre</p>
+            <input type="text">
+            <p>Apellidos</p>
+            <input type="text">
+            <p>Celular</p>
+            <input type="number">
+            <p>Correo electrónico</p>
+            <input type="email">
+            <p>Servicio de interés</p>
+            <input type="text">
+            <p>¿Qué día y horario le gustaría agendar su consulta?</p>
+            <input type="datetime-local">
+            <button type="submit">Enviar</button>
+            <p>Te contactaremos en 24 horas hábiles <a href="#">Consulta nuestro aviso de privacidad</a></p>
+        </section>
     </main>
-
+    <footer>
+        <section class="redes">
+            <h1 class="titleredes">Síguenos en nuestras redes sociales</h1>
+            <img src="assets\images\fblogo.png" alt="Liga para la página de Facebook">
+            <img src="assets\images\iglogo.png" alt="Liga para la página de Instagram">
+            <img src="assets\images\twitterlogo.png" alt="Liga para la página de Twitter">
+        </section>
+        <section class="pie">
+            <section>
+                <h1>Acerca de nosotros</h1>
+                <ul>
+                    <li><a href="X">¿Quiénes somos?</a></li>
+                    <li><a href="X">Nuestra misión</a></li>
+                    <li><a href="X">Servicios</a></li>
+                    <li><a href="X">Contacto</a></li>
+                </ul>
+            </section>
+            <section>
+                <h1>Calle 16 de Septiembre #216</h1>
+                <h1>Santa María Tonameca Centro</h1>
+                <h1>Santa María Tonameca, Oax. C.P. 70946</h1>
+                <br>
+                <h2>Horarios de atención:</h2>
+                <p>Lunes a Viernes</p>
+                <p>10:00 AM a 7:00 PM</p>
+                <br>
+                <p>Sábado</p>
+                <p>10:00 AM a 6:00 PM</p>
+            </section>
+            <section>
+                <h1>Legal</h1>
+                <p><a href="#">Aviso de privacidad</a></p>
+                <p><a href="#">Términos y Condiciones</a></p>
+            </section>
+        </section>
+        <section class="avisos">
+            <p>© 2022 U Camp. Todos los derechos reservados. Esta es una página ficticia para fines académicos.</p>
+            <p>Política de privacidad</p>
+            <p>Powered by Pedro Sáenz</p>
+        </section>
+        
+    </footer>
 </body>
 </html>
