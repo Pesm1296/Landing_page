@@ -1,7 +1,27 @@
-*{font-family:Verdana, Geneva, Tahoma, sans-serif }
-a {
+*{font-family: Arial, Helvetica, sans-serif;}
+
+.logo{
     display: flex;
     align-items: center;
+    text-decoration: none;
+}
+.logo img {
+    height: 65px;
+    width: 65px;
+    margin-right: 10px;
+}
+a h1{
+    font-size: 30px;
+    white-space: nowrap;
+    z-index: 1;
+}
+header {
+    display: flex;
+    flex-direction: column row;
+    min-height: 7px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
 }
 nav{
     margin: 0px auto 0;
@@ -11,39 +31,30 @@ nav{
     background: linear-gradient(to left, rgb(82, 132, 232),white);
     border-radius: 8px;
     font-size: 0;
-    text-align: left;
-}
-nav img{
-    margin-top: 5px;
-    position: relative;
-    width: 50%;
-    height: 50%;
+    text-align: right;
 }
 nav a {
-    height: 100px;
+    height: 100%;
     font-size: 20px;
     display: inline-block;
     position: relative;
     z-index: 1;
     text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
+    text-align: right;
     color: black;
     cursor: pointer;
+    text-align: center;
 }
-nav .animation{
-    position: absolute;
-    height: 100%;
-    top: 0;
-    z-index: 0;
-    transition: all .5s ease 0s;
-    border-radius: 8px;
+nav a:hover {
+    color: white;
 }
 a:nth-child(1){
-    width: 100px;
+    width: 120px;
+    line-height: 30px;
 }
 a:nth-child(2){
-    width: 150px;
+    width: 120px;
+    line-height: 30px;
 }
 a:nth-child(3){
     width: 150px;
@@ -51,40 +62,148 @@ a:nth-child(3){
 a:nth-child(4){
     width: 150px;
 }
-a:nth-child(5){
-    width: 150px;
-}
-nav .start-logo, a:nth-child(1):hover~.animation{
-    width: 100px;
-    left: 0;
-    background-color: aliceblue;
-}
-nav .start-Quienessomos, a:nth-child(2):hover~.animation{
-    width: 150px;
-    left: 100px;
-    background-color: aliceblue;
-}
-nav .start-nuestramision, a:nth-child(3):hover~.animation{
-    width: 150px;
-    left: 250px;
-    background-color: aliceblue;
-}
-nav .start-precios, a:nth-child(4):hover~.animation{
-    width: 150px;
-    left: 400px;
-    background-color: aliceblue;
-}
-nav .start-contacto, a:nth-child(5):hover~.animation{
-    width: 150px;
-    left: 550px;
-    background-color: aliceblue;
-}
-span{
-    color: aqua;
-}
-.fb{
-    background-color: #2410d3;
-    padding: 8px;
-    border-radius: 50px;
+.jumbotron{
+    width: 100%;
+    margin-top: 0;
+    padding: 20px;
     color: white;
+    background-image: linear-gradient(rgba(58, 59, 60, 0.75),rgba(150, 148, 148, 0.75)), url("https://www.portalodontologos.mx/noticias/noticias/relacion-dentista-paciente%20900x350.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.jumbotrontitle{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    font-weight: 600;
+    margin-top: 300px;
+    margin-bottom: 100px;
+}
+.jumbotrontext h1{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    font-size: 25px;
+}
+.jumbotrontext p{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    text-align: center;
+    font-size: 20px;
+}
+.jumbotron input{
+    width: 300px;
+    height: 24px;
+    padding: 6px 8px 6px 8px;
+    border-radius: 8px;
+    margin: 5px;
+}
+.jumbotron button{
+    height: 35px;
+    width: 65px;
+    border-radius: 8px;
+    padding: 6px 8px 6px 8px;
+    margin: 5px;
+}
+main .correo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.jumbotron a{
+    display: flex;
+    justify-content: center;
+}
+.blog{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 20px;
+}
+.blog .servicio{
+    width: 400px;
+    height: 420px;
+    border-radius: 8px;
+    border-color: gray ;
+    border-style: ridge;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    text-align: center;
+    color: black;
+    transition: all 0.25;
+    background-color: white;
+    margin: 10px;
+}
+.blog p{
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.blog .servicio:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0, 0, 0, 0.2);
+}
+.blog .servicio img{
+    margin: 10px;
+    width: 300px;
+    height: 180px;
+    border-radius: 8px;
+}
+.blog .servicio .h1{
+    font-weight: 600;
+}
+.blog .servicio .p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.blog .servicio a{
+    font-weight: 50;
+    text-decoration: none;
+    color: #3498db;
+}
+.adicionales{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+.agendacita h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.agendacita p{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-bottom: 2px;
+}
+.agendacita input{
+    width: 200px;
+    height: 20px;
+    padding: 6px 8px 6px 8px;
+    border-radius: 8px;
+    margin: 5px;
+}
+.agendacita button{
+    height: 35px;
+    width: 65px;
+    border-radius: 8px;
+    padding: 6px 8px 6px 8px;
+    margin: 5px;
+    cursor: pointer;
+}
+.consulta img{
+    border-radius: 8px;
+}
+footer{
+    margin: 0px 10px 20px 10px;
+    padding: 10px;
+    background-color: gray;
 }
