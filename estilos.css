@@ -173,6 +173,9 @@ main .correo{
     margin: 20px;
     margin-bottom: 0px;
 }
+main .adicionales .consulta img{
+    border-radius: 8px;
+}
 .agendacita h1{
     display: flex;
     justify-content: center;
@@ -198,9 +201,6 @@ main .correo{
     padding: 6px 8px 6px 8px;
     margin: 5px;
     cursor: pointer;
-}
-.consulta img{
-    border-radius: 8px;
 }
 footer{
     margin: 0px 10px 20px 10px;
