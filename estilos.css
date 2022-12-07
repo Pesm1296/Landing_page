@@ -29,7 +29,7 @@ header {
     min-height: 7px;
     justify-content: space-evenly;
     align-items: center;
-    padding: 15px;
+    padding: 15px 0 15px 15px;
 }
 nav{
     margin: 0px auto 0;
@@ -273,6 +273,7 @@ main .correo{
     text-align: center;
     color: white;
     text-shadow: 3px 0 rgb(0, 0, 0), 2px 1px rgb(0, 0, 0);
+    font-size: 30px;
 }
 .agendacita p{
     display: flex;
